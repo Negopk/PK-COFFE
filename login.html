@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - PK-Coffee</title>
+    <link rel="stylesheet" href="./Style/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Bem-vindo à PK-Coffee</h2>
+        <form id="login-form" class="login-form">
+            <div class="input-group">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+             <button class="entrar-btn">Entrar</button>
+        </form>
+        <p id="error-message" class="error-message"></p>
+    </div>
+
+    <script>
+        const form = document.getElementById('login-form');
+        const errorMessage = document.getElementById('error-message');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const usernameadmin = document.getElementById('username').value;
+            const passwordadmin = document.getElementById('password').value;
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+          
+
+            if (username === 'murilo' && password === '123') {
+               
+                window.location.href = 'header.html';
+            } else {
+
+
+                if (username === 'admin' && password === '123') {
+               
+               window.location.href = 'CadastroProduto.html';
+           } else {
+           }
+               
+               
+                errorMessage.textContent = 'Nome de usuário ou senha incorretos.';
+                errorMessage.style.display = 'block';
+
+               
+                document.getElementById('username').value = '';
+                document.getElementById('password').value = '';
+
+               
+                document.getElementById('username').focus();
+            }
+        });
+    </script>
+
+<footer class="footer">
+    <p>&copy; 2024 PK-Coffee. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
+

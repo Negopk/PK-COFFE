@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #7c472c9f;
+    background-image:url(./images/Logos/Firefly\ Faz\ uma\ logo\ de\ cafeteria\ com\ o\ nome\ PK\ Coffe\ com\ um\ polvo\ com\ as\ cores\ de\ cafe\ 97877.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #441e199a;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #00000052;
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #ffffff;
+    background-color: #7c472c79;
+    border-radius: 8px;
+}
+.entrar-btn {
+    background-color: #ff9b65; /* Marrom */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.entrar-btn:hover {
+    background-color: #a0512d79; /* Marrom mais claro */
+}
+
+
+.login-form {
+    margin-top: 0px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+
+input[type="submit"]:hover {
+    background-color: #7c462c;
+}
+
+
+.error-message {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ffcccc;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    color: #ff0000;
+    text-align: center;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ff9b65;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+}

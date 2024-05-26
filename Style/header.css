@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #333;
+   background-image: url("https://tint.creativemarket.com/CYB48iDXNRyGKBEMT3K76vJwBYRJOwHD6gVCuOiaQso/width:1820/height:2730/gravity:ce/rt:fill-down/el:1/preset:cm_watermark_retina/czM6Ly9maWxlcy5jcmVhdGl2ZW1hcmtldC5jb20vaW1hZ2VzL3NjcmVlbnNob3RzL3Byb2R1Y3RzLzYzMS82MzEzLzYzMTMzNjYvanJvNmc1czNlYXpmYXczdHhlZGV1ZmdjYmVuZXJkenQzbjhqZXg3aTFmaWc4a25tbmtpcDdxeWplanRncWs4Yy1vLmpwZw?1710028372&fmt=webp");
+   filter: blur(px);
+   background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: #3e2723;
+    color: #ffffff;
+    padding: 10px 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 10px 20px;
+    
+
+}
+
+
+.logo h1 {
+    margin: 0;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #795548;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background-color: #5d4037;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #795548;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #5d4037;
+}
+
+.user-cart button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #795548;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.user-cart button:hover {
+    background-color: #5d4037;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    border-bottom: 2px solid #3e2723;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.cart.active {
+    right: 0;
+}
+
+.cart {
+    position: fixed;
+    top: 0;
+    right: -500px; /* Posição inicial fora da tela */
+    width: 300px;
+    height: 100%;
+    background-color: #8d5b41;
+    background-repeat: no-repeat;
+    background-size:auto;
+    z-index: 1000;
+    transition: right 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.cart h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #ffffff; /* marrom escuro */
+}
+
+.cart-items {
+    margin-top: 20px;
+}
+
+.cart button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5d4037; /* marrom escuro */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.cart button:hover {
+    background-color: #6d4c41; /* marrom mais escuro */
+}
+
+.main-content {
+    
+    color:#ffffff;
+    padding-top: 80px; /* Ajuste conforme a altura do header */
+    
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    width: 250px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    color: #8b4513; /* Marrom escuro */
+}
+
+.product button {
+    background-color: #4b3621; /* Marrom mais escuro */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #5c4530; /* Marrom mais claro */
+}
+
+.contact {
+    background-color: #8b4513; /* Marrom escuro */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+
+.footer {
+    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #8d5b41;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+}
+
+

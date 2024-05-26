@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>PK Coffee</title>
+    <link rel="stylesheet" href="./Style/header.css">
+</head>
+<header>
+    <div class="logo" onclick="goToHome()">
+
+        <h1>PK COFFE</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="./Bebidas.html">Bebidas</a></li>
+            <li><a href="./Doces.html">Doces</a></li>
+            <li><a href="./Salgados.html">Salgados</a></li>
+        </ul>
+    </nav>
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Buscar...">
+        <button onclick="search()">
+
+            <i class='bx bx-search-alt-2'></i>
+
+        </button>
+    </div>
+    <div class="user-cart">
+        <button onclick="goToProfile()">
+
+            <i class='bx bxs-user'></i>
+
+        </button>
+        <button onclick="toggleCart()">
+            <span class="cart-items">0</span>
+            <i class='bx bxs-cart'></i>
+
+        </button>
+    </div>
+    
+</header>
+<body>
+  
+    <div id="cart" class="cart">
+        <h2>Carrinho</h2>
+       
+        <div class="cart-items">
+         
+        </div>
+
+        <button onclick="toggleCart()">Fechar</button>
+        <button onclick="addEventListener()">Finalizar compras</button>
+    </div>
+
+
+    <section class="main-content">
+        <h1>MUITAS DELICIAS</h1>
+        <div class="products">
+            <div class="product">
+                <img src="https://www.shutterstock.com/image-vector/robot-coffee-cup-drink-cafe-260nw-2041610546.jpg" alt="Product 1">
+                <h3>Nome do Produto 1</h3>
+                <p>Descrição do Produto 1</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="https://www.shutterstock.com/image-vector/robot-coffee-cup-drink-cafe-260nw-2041610546.jpg" alt="Product 1">
+                <h3>Nome do Produto 1</h3>
+                <p>Descrição do Produto 1</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <img src="https://www.shutterstock.com/image-vector/robot-coffee-cup-drink-cafe-260nw-2041610546.jpg" alt="Product 2">
+                <h3>Nome do Produto 2</h3>
+                <p>Descrição do Produto 2</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product">
+                <img src="https://www.shutterstock.com/image-vector/robot-coffee-cup-drink-cafe-260nw-2041610546.jpg" alt="Product 2">
+                <h3>Nome do Produto 2</h3>
+                <p>Descrição do Produto 2</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product">
+                <img src="https://www.shutterstock.com/image-vector/robot-coffee-cup-drink-cafe-260nw-2041610546.jpg" alt="Product 2">
+                <h3>Nome do Produto 2</h3>
+                <p>Descrição do Produto 2</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product">
+                <img src="https://www.shutterstock.com/image-vector/robot-coffee-cup-drink-cafe-260nw-2041610546.jpg" alt="Product 2">
+                <h3>Nome do Produto 2</h3>
+                <p>Descrição do Produto 2</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product">
+                <img src="https://www.shutterstock.com/image-vector/robot-coffee-cup-drink-cafe-260nw-2041610546.jpg" alt="Product 2">
+                <h3>Nome do Produto 2</h3>
+                <p>Descrição do Produto 2</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <!-- Adicione mais produtos conforme necessário -->
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2024 PK-Coffee. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="./style/header.js"></script>
+</body>
+</html>

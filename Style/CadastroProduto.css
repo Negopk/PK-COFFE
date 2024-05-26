@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input, select, button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #a36831;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgb(255, 209, 109);
+  }
+  
+  #product-list {
+    margin-top: 20px;
+  }
+  

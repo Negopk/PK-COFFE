@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Style/index.css">
+    <title>PK-COFFE</title>
+</head>
+<body>
+
+    <header>
+        <a id="cafe" href="./index.html" class="logo"><i class='bx bxs-coffee-alt'></i> PK COFFE </a>
+        <ul class="navegação">
+         <a href="#" class="Home"></i> Home </a>  
+         <a href = "./Bebidas.html" class="bebidas"> Bebidas</a>
+         <a href="./Doces.html" class="doce">Doces</a>
+        <a href="./Salgados.html"class="salgado"> Salgados</a>
+
+        <a href="https://www.instagram.com/n3go_pk/"></i> Contato</a>
+
+        </ul>
+
+        <div class="header-icons">
+            <i class='bx bx-cart'></i>
+            <div id="perfil"><i class='bx bxs-user'  style="color: white"></i></div>
+        </div>
+    </header>
+
+
+    <section class="home">
+        <div class="home-img">
+            <img src="product1.png" class="one">
+        </div>
+
+        <div class="home-text">
+
+            <h1>Muitas <br> Delicias</h1>
+            <h4>Você mais feliz de barriga cheia</h4>
+            
+            <a href="https://parceiros.ifood.com.br/restaurante?network=g&utm_source=google&utm_medium=cpc&utm_campaign=ifood_br_b2b_g-search-brand_aon_kw-ifood_ifood-exata&utm_content=675464984056&utm_term=ifood-e&gad_source=1&gclid=CjwKCAjw3NyxBhBmEiwAyofDYbSy8fUX45oNNa-9ymjnyzY_mlDhyt-l41YE4PxDRIhasORE8Ifs6hoCSykQAvD_BwE" class="btn">Matar a fome</a>
+            
+        </div>
+    </section>
+
+
+    <div class="main">
+        <div class="row">
+            <li><img src="https://i.pinimg.com/originals/43/1b/a7/431ba7d385662e0837499e6e429df4fd.jpg" onclick="slider('product1.png')"></li>
+        </div>
+
+        <div class="row2">
+            <li><img src="https://i.pinimg.com/originals/76/af/2d/76af2d10de6b0a27a61cc224241e47cc.jpg" onclick="slider('product2.png')"></li>
+        </div>
+
+        <div class="row3">
+            <li><img src="https://i.pinimg.com/originals/70/2d/99/702d995a755d3de3cbff4f9a397b9591.jpg" onclick="slider('product3.png')"></li>
+        </div>
+    </div>
+
+    <script>
+        function slider (anything){
+            document.querySelector ('.one') .src = anything;
+        };
+
+       let menu = document.querySelector ('#menu-icon');
+       let navbar = document.querySelector ('.navbar');
+
+       menu.onclick = () => {
+        menu.classList.toggle ('bx-x');
+        navbar.classList.toggle ('open');
+       }
+
+       const carousel = new bootstrap.Carousel('#myCarousel')
+    </script>
+    
+</body>
+</html>

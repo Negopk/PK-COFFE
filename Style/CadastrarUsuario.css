@@ -1,0 +1,43 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image:url(./images/Logos/Firefly\ Faz\ uma\ logo\ de\ cafeteria\ com\ o\ nome\ PK\ Coffe\ com\ um\ polvo\ com\ as\ cores\ de\ cafe\ 97877.jpg) ;
+}
+
+.container-cadastro {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 35px;
+    background-color: transparent;
+    box-shadow: #000;
+}
+
+
+.mb-3 {
+color: #fff;
+background-color: #5e4120;
+border-radius: 8px;
+
+
+}
+
+    .entrar-btn {
+        background-color: #ff9b65; /* Marrom */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .entrar-btn:hover {
+        background-color: #a0512d79; /* Marrom mais claro */
+    }
+
+
+
+
+
